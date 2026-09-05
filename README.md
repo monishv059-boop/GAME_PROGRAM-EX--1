@@ -1,43 +1,51 @@
 # GAME_PROGRAM-EX--1
-Aim
+# EXP:1 Implementing various effects in a material such as emissive, roughness and metallic properties in Unreal Engine
+
+## Aim
 To implement and demonstrate various material effects in Unreal Engine, including emissive, roughness, and metallic properties, using the Material Editor.
 
-Procedure
-Create a New Material:
+## Procedure
 
-Open Unreal Engine.
-In the Content Browser, right-click and select Material.
-Name it M_EffectsDemo.
-Apply Base Color:
+1. **Create a New Material:**
+   - Open Unreal Engine.
+   - In the Content Browser, right-click and select **Material**.
+   - Name it `M_EffectsDemo`.
 
-Open the material.
-Add a Vector Parameter or Constant3Vector node and connect it to the Base Color input.
-Add Emissive Effect:
+2. **Apply Base Color:**
+   - Open the material.
+   - Add a **Vector Parameter** or **Constant3Vector** node and connect it to the **Base Color** input.
 
-Add a Multiply node.
-Connect a Constant3Vector (for emissive color) and a Scalar Parameter (for intensity).
-Connect the result to the Emissive Color input.
-Control Roughness:
+3. **Add Emissive Effect:**
+   - Add a **Multiply** node.
+   - Connect a **Constant3Vector** (for emissive color) and a **Scalar Parameter** (for intensity).
+   - Connect the result to the **Emissive Color** input.
 
-Add a Scalar Parameter node and connect it to the Roughness input.
-Lower values = shinier surface, higher values = rougher surface.
-Control Metallic Property:
+4. **Control Roughness:**
+   - Add a **Scalar Parameter** node and connect it to the **Roughness** input.
+   - Lower values = shinier surface, higher values = rougher surface.
 
-Add a Scalar Parameter node and connect it to the Metallic input.
-0 = non-metal, 1 = fully metallic.
-Save and Apply Material:
+5. **Control Metallic Property:**
+   - Add a **Scalar Parameter** node and connect it to the **Metallic** input.
+   - 0 = non-metal, 1 = fully metallic.
 
-Save the material.
-Apply it to any mesh in the scene (like a sphere or cube) to preview the results.
+6. **Save and Apply Material:**
+   - Save the material.
+   - Apply it to any mesh in the scene (like a sphere or cube) to preview the results.
+  
+     
+## Output
 
-Output:
-<img width="1192" height="791" alt="image" src="https://github.com/user-attachments/assets/13f6050b-68f8-4f0c-ace1-26017ba214d0" />
-<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/5d04a1f5-fd3d-4911-b382-7a17a7a1d4dc" />
+<img width="1536" height="1024" alt="ChatGPT Image Nov 13, 2025, 01_34_14 PM" src="https://github.com/user-attachments/assets/c4756af5-a1c2-40a8-a90e-7937f2936df4" />
 
-Result:
+
+![image](https://github.com/user-attachments/assets/3aaea163-8335-42c9-af3c-46adac71cb00)
+
+
+
+## Result
 Successfully implemented a material in Unreal Engine showcasing:
+- Emissive glow using emissive color and intensity.
+- Variable surface roughness to simulate different textures.
+- Metallic appearance adjustment to reflect light like real-world metals.
 
-Emissive glow using emissive color and intensity.
-Variable surface roughness to simulate different textures.
-Metallic appearance adjustment to reflect light like real-world metals.
 This setup enables dynamic, realistic materials suitable for use in environments, characters, and VFX in Unreal Engine projects.
